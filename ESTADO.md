@@ -27,6 +27,7 @@ Estado: v1.0.1 publicada, con README presentable, home animado en docs/index.htm
 - 2026-10-17 (v1.0.1): home animado en `docs/index.html` + `docs/styles.css`. Es HTML y CSS puro, estilo cuarto oscuro: el hero es un visor de cámara y las secciones aparecen con animaciones ligadas al scroll. Además:
   - Banner SVG animado en `assets/banner.svg` y capturas en `assets/`.
   - README reescrito: instalación en 2 comandos, probada con `claude plugin marketplace add` / `install` en una config aislada contra GitHub; sección "Qué es"; tabla de uso; el detalle va en secciones plegables.
+- 2026-10-17: panel About del repo en GitHub completo: descripción, sitio (tododeia.com) y 16 topics.
 
 ## Qué sigue
 - Si se quiere el home en línea: activar GitHub Pages desde `/docs`. Siendo el repo privado, Pages necesita plan de pago o hacer público el repo; decide Enrique.
