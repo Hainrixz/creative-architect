@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
+  "name": "creative-architect",
+  "owner": {
+    "name": "Enrique Rocha",
+    "url": "https://tododeia.com"
+  },
+  "description": "Creative Architect: dirección de arte y producción de imagen y video con IA, en español.",
+  "plugins": [
+    {
+      "name": "creative-architect",
+      "source": "./",
+      "description": "Director de arte y productor de imagen y video con IA, independiente del proveedor: producto, avatar, UGC, animación y clonación de anuncios.",
+      "author": {
+        "name": "Enrique Rocha",
+        "url": "https://tododeia.com"
+      },
+      "homepage": "https://tododeia.com",
+      "license": "MIT",
+      "category": "design",
+      "keywords": ["direccion-de-arte", "imagen", "video", "ugc", "producto", "avatar", "español"]
+    }
+  ]
+}
