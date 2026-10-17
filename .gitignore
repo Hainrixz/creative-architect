@@ -1,0 +1,26 @@
+# Fuente original (solo lectura, no se publica)
+fuente/
+.arq.log
+*.log
+
+# Sistema
+.DS_Store
+node_modules/
+
+# Secretos
+.env
+.env.*
+*.key
+*.pem
+
+# Entregables y material de trabajo
+trabajo/
+entrada/
+salida/
+
+# Material de marca (caras, voces, identificadores) y archivos de llamadas
+marca/
+marca.json
+respuesta.json
+peticion.json
+prompt.txt
