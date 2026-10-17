@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creative Architect · Dirección de arte con IA para Claude Code</title>
+  <meta name="description" content="Tu director de arte y productor de imagen y video con IA, dentro de Claude Code. Funciona con Higgsfield, Magnific, OpenAI o el proveedor que tengas.">
+  <meta name="theme-color" content="#0d0b09">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Figtree:wght@400;500;600&family=Martian+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grano" aria-hidden="true"></div>
+
+  <header class="barra">
+    <a class="marca" href="#inicio"><span class="marca__punto"></span>Creative Architect</a>
+    <nav class="barra__nav" aria-label="Secciones">
+      <a href="#que-es">Qué es</a>
+      <a href="#oficios">Oficios</a>
+      <a href="#proveedores">Proveedores</a>
+      <a href="#instalar" class="barra__cta">Instalar</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO: un visor de cámara -->
+    <section class="hero" id="inicio">
+      <div class="hero__luz" aria-hidden="true"></div>
+      <div class="hero__luz hero__luz--relleno" aria-hidden="true"></div>
+
+      <div class="visor" aria-hidden="true">
+        <span class="visor__esquina visor__esquina--ns"></span>
+        <span class="visor__esquina visor__esquina--ne"></span>
+        <span class="visor__esquina visor__esquina--so"></span>
+        <span class="visor__esquina visor__esquina--se"></span>
+        <span class="visor__tercio visor__tercio--v1"></span>
+        <span class="visor__tercio visor__tercio--v2"></span>
+        <span class="visor__tercio visor__tercio--h1"></span>
+        <span class="visor__tercio visor__tercio--h2"></span>
+        <span class="visor__foco"></span>
+        <span class="visor__rec"><i></i>REC</span>
+      </div>
+
+      <div class="hero__contenido">
+        <p class="eyebrow hero__eyebrow">Plugin para Claude Code · v1.0.1</p>
+        <h1 class="hero__titulo">
+          <span class="linea"><span>Creative</span></span>
+          <span class="linea"><em>Architect</em></span>
+        </h1>
+        <p class="hero__lema">Decide la imagen <em>antes</em> de escribirla.</p>
+        <p class="hero__texto">
+          Tu director de arte y productor de imagen y video con IA. Fotos de producto, avatares de marca,
+          UGC, animación y anuncios con estructura que ya probó funcionar, en el proveedor que tengas conectado.
+        </p>
+        <div class="hero__acciones">
+          <a class="boton boton--lleno" href="#instalar">Instalar en 30 segundos</a>
+          <a class="boton boton--linea" href="https://github.com/Hainrixz/creative-architect">Ver en GitHub</a>
+        </div>
+      </div>
+
+      <div class="lectura" aria-label="Ajustes de ejemplo">
+        <span class="lectura__item">85&nbsp;mm</span>
+        <span class="lectura__item">f/2.8</span>
+        <span class="lectura__item">luz lateral suave</span>
+        <span class="lectura__item">tercio derecho</span>
+        <span class="lectura__item lectura__item--ambar">9:16</span>
+      </div>
+    </section>
+
+    <!-- CINTA DE PILARES -->
+    <div class="cinta" aria-hidden="true">
+      <div class="cinta__pista">
+        <span>Luz y composición, siempre</span><span>✦</span>
+        <span>El producto real manda</span><span>✦</span>
+        <span>Poco movimiento gana</span><span>✦</span>
+        <span>El gancho se juega en 3 segundos</span><span>✦</span>
+        <span>Estructura sí, contenido no</span><span>✦</span>
+        <span>Sin texto horneado</span><span>✦</span>
+        <span>Luz y composición, siempre</span><span>✦</span>
+        <span>El producto real manda</span><span>✦</span>
+        <span>Poco movimiento gana</span><span>✦</span>
+        <span>El gancho se juega en 3 segundos</span><span>✦</span>
+        <span>Estructura sí, contenido no</span><span>✦</span>
+        <span>Sin texto horneado</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- QUÉ ES / DE DÓNDE VIENE -->
+    <section class="seccion acerca" id="que-es">
+      <div class="seccion__cabeza revela">
+        <p class="eyebrow">01 — De dónde viene</p>
+        <h2>El oficio no depende<br>de la <em>herramienta</em>.</h2>
+      </div>
+
+      <div class="acerca__cuerpo">
+        <div class="acerca__texto revela">
+          <p>
+            Creative Architect nace de <strong>higgsfield-estudio</strong>, el plugin de Enrique Rocha para hacer UGC,
+            avatares, fotos de producto y anuncios. Ese plugin tenía dos cosas mezcladas: el <strong>oficio</strong>
+            (cómo se escribe un prompt que no sale genérico, cómo se respeta un producto real, cómo se arma un gancho)
+            y el <strong>proveedor</strong> (nombres de herramientas, modelos, un candado de créditos).
+          </p>
+          <p>
+            Aquí se separaron. Las skills piden <em>intenciones</em>, como "editar con la foto real como referencia" o
+            "video desde imagen", y una capa de proveedores las traduce a Higgsfield, Magnific, OpenAI o el que añadas.
+            El mismo criterio hoy con uno y mañana con otro.
+          </p>
+        </div>
+
+        <div class="capas revela" aria-hidden="true">
+          <div class="capa capa--oficio">
+            <span class="capa__etiqueta">Oficio</span>
+            <span class="capa__linea">luz · lente · composición</span>
+            <span class="capa__linea">ancla de fidelidad</span>
+            <span class="capa__linea">gancho · estructura</span>
+          </div>
+          <div class="capa capa--intencion">
+            <span class="capa__etiqueta">Intenciones</span>
+            <span class="capa__linea">imagen.editar · video.desde_imagen</span>
+          </div>
+          <div class="capa capa--proveedor">
+            <span class="capa__etiqueta">Proveedores</span>
+            <span class="capa__chips"><b>Higgsfield</b><b>Magnific</b><b>OpenAI</b><b class="vacio">+ el tuyo</b></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOS ONCE BLOQUES -->
+    <section class="seccion bloques">
+      <div class="seccion__cabeza revela">
+        <p class="eyebrow">02 — Cómo piensa</p>
+        <h2>Un prompt corto no es libre.<br>Es uno donde <em>el modelo elige por ti</em>.</h2>
+        <p class="seccion__bajada">Y el modelo siempre elige el promedio. Por eso cada imagen se escribe en once bloques, con lo innegociable arriba.</p>
+      </div>
+
+      <ol class="bloques__lista">
+        <li class="bloque revela"><span class="bloque__n">01</span><span class="bloque__nombre">Concepto</span><span class="bloque__ej">Foto publicitaria para anuncio de Instagram, cálida y apetecible.</span></li>
+        <li class="bloque revela"><span class="bloque__n">02</span><span class="bloque__nombre">Sujeto</span><span class="bloque__ej">Frasco de vidrio ámbar de 250 g, etiqueta kraft mate, tapa negra.</span></li>
+        <li class="bloque revela"><span class="bloque__n">03</span><span class="bloque__nombre">Composición</span><span class="bloque__ej">Plano medio, frasco al tercio derecho, tercio izquierdo vacío.</span></li>
+        <li class="bloque bloque--clave revela"><span class="bloque__n">04</span><span class="bloque__nombre">Luz</span><span class="bloque__ej">Lateral suave desde la izquierda, tipo ventana grande, cálida.</span></li>
+        <li class="bloque revela"><span class="bloque__n">05</span><span class="bloque__nombre">Fondo</span><span class="bloque__ej">Cemento pulido claro, desenfocado, sin objetos.</span></li>
+        <li class="bloque revela"><span class="bloque__n">06</span><span class="bloque__nombre">Materiales</span><span class="bloque__ej">Vidrio con brillo suave, metal mate, polvo de café.</span></li>
+        <li class="bloque bloque--clave revela"><span class="bloque__n">07</span><span class="bloque__nombre">Lente</span><span class="bloque__ej">85 mm a f/2.8. Enfoque nítido en la etiqueta.</span></li>
+        <li class="bloque revela"><span class="bloque__n">08</span><span class="bloque__nombre">Paleta</span><span class="bloque__ej">Ámbar, crema y negro profundo. Sin azules.</span></li>
+        <li class="bloque revela"><span class="bloque__n">09</span><span class="bloque__nombre">Estilo</span><span class="bloque__ej">Editorial de gastronomía, grano fino. Técnica, no apellidos.</span></li>
+        <li class="bloque revela"><span class="bloque__n">10</span><span class="bloque__nombre">Calidad</span><span class="bloque__ej">Alto detalle en la etiqueta. Sin "8k obra maestra".</span></li>
+        <li class="bloque revela"><span class="bloque__n">11</span><span class="bloque__nombre">Qué evitar</span><span class="bloque__ej">Sin texto, sin logotipos ajenos, sin reflejos imposibles.</span></li>
+      </ol>
+    </section>
+
+    <!-- OFICIOS -->
+    <section class="seccion oficios" id="oficios">
+      <div class="seccion__cabeza revela">
+        <p class="eyebrow">03 — Qué incluye</p>
+        <h2>Un agente y <em>ocho</em> skills.</h2>
+      </div>
+
+      <div class="rejilla">
+        <article class="tarjeta tarjeta--ancha revela">
+          <span class="tarjeta__tag">agente</span>
+          <h3>creative-architect</h3>
+          <p>Detecta tus proveedores, lee tu marca, enruta al oficio, escribe el prompt, genera, revisa contra el producto real y entrega con los prompts que funcionaron.</p>
+          <ol class="flujo" aria-label="Orden de trabajo">
+            <li>detecta</li><li>lee la marca</li><li>enruta</li><li>escribe</li><li>genera</li><li>revisa</li><li>entrega</li>
+          </ol>
+        </article>
+        <article class="tarjeta tarjeta--entrada revela">
+          <span class="tarjeta__tag">/creative-architect</span>
+          <h3>Entrada</h3>
+          <p>Pídelo como te salga. Te manda al oficio correcto o pregunta una sola cosa.</p>
+        </article>
+        <article class="tarjeta revela">
+          <span class="tarjeta__tag">/producto</span>
+          <h3>Producto</h3>
+          <p>De la foto del celular a la de catálogo, sin inventar el producto.</p>
+        </article>
+        <article class="tarjeta revela">
+          <span class="tarjeta__tag">/avatar</span>
+          <h3>Avatar</h3>
+          <p>La misma cara y la misma voz en todos tus videos. Con consentimiento.</p>
+        </article>
+        <article class="tarjeta revela">
+          <span class="tarjeta__tag">/ugc</span>
+          <h3>UGC</h3>
+          <p>Review, unboxing, try-on, tutorial. Brief, gancho y honestidad.</p>
+        </article>
+        <article class="tarjeta revela">
+          <span class="tarjeta__tag">/animar</span>
+          <h3>Animar</h3>
+          <p>Describe el movimiento, no la escena. Y déjalo en 9:16.</p>
+        </article>
+        <article class="tarjeta revela">
+          <span class="tarjeta__tag">/clonar-anuncio</span>
+          <h3>Clonar anuncio</h3>
+          <p>La Biblioteca de Meta, la ficha de estructura y tu guion encima.</p>
+        </article>
+        <article class="tarjeta revela">
+          <span class="tarjeta__tag">/direccion-de-arte</span>
+          <h3>Dirección de arte</h3>
+          <p>Once bloques, luz y lente, antipatrones y el ancla de fidelidad.</p>
+        </article>
+        <article class="tarjeta revela">
+          <span class="tarjeta__tag">/proveedores</span>
+          <h3>Proveedores</h3>
+          <p>Qué tienes conectado y cómo se dice cada intención en cada uno.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROVEEDORES -->
+    <section class="seccion proveedores" id="proveedores">
+      <div class="seccion__cabeza revela">
+        <p class="eyebrow">04 — Proveedores</p>
+        <h2>Funciona con lo que <em>tengas</em>.</h2>
+        <p class="seccion__bajada">Al empezar mira qué hay: conectores MCP, CLIs y variables de entorno, sin imprimir nunca una llave. Si no hay ninguno, te entrega el prompt listo para pegar.</p>
+      </div>
+
+      <div class="escaner revela">
+        <span class="escaner__barrido" aria-hidden="true"></span>
+        <div class="prov">
+          <span class="prov__estado"><i></i>detectado</span>
+          <h3>Higgsfield</h3>
+          <p class="prov__via">MCP de claude.ai · CLI <code>higgsfield</code></p>
+          <p>Video, UGC guiado, identidades persistentes, voz y edición con referencia.</p>
+        </div>
+        <div class="prov">
+          <span class="prov__estado"><i></i>detectado</span>
+          <h3>Magnific</h3>
+          <p class="prov__via">MCP oficial (OAuth) · API REST</p>
+          <p>Escalado, reiluminado, expansión y detalle de imagen.</p>
+        </div>
+        <div class="prov">
+          <span class="prov__estado"><i></i>detectado</span>
+          <h3>OpenAI</h3>
+          <p class="prov__via">API · <code>OPENAI_API_KEY</code></p>
+          <p>Imagen con texto preciso, edición con referencia y voz en off.</p>
+        </div>
+        <div class="prov prov--tuyo">
+          <span class="prov__estado prov__estado--espera"><i></i>plantilla</span>
+          <h3>El tuyo</h3>
+          <p class="prov__via"><code>nuevo-proveedor.md</code></p>
+          <p>Un archivo que mapea cada intención. Las skills no se tocan.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTALAR -->
+    <section class="seccion instalar" id="instalar">
+      <div class="seccion__cabeza revela">
+        <p class="eyebrow">05 — Instalar</p>
+        <h2>Dos comandos y <em>listo</em>.</h2>
+      </div>
+
+      <div class="instalar__cuerpo">
+        <div class="terminal revela" role="figure" aria-label="Comandos de instalación dentro de Claude Code">
+          <div class="terminal__barra"><i></i><i></i><i></i><span>Claude Code</span></div>
+          <pre class="terminal__cuerpo"><code><span class="t-linea t-1"><span class="t-prompt">&gt;</span> /plugin marketplace add Hainrixz/creative-architect</span>
+<span class="t-linea t-2"><span class="t-prompt">&gt;</span> /plugin install creative-architect@creative-architect</span>
+<span class="t-linea t-3 t-ok">✓ creative-architect 1.0.1 instalado</span>
+<span class="t-linea t-4"><span class="t-prompt">&gt;</span> /creative-architect fotos de mi crema para Meta en 4:5<span class="cursor"></span></span></code></pre>
+        </div>
+
+        <ol class="pasos revela">
+          <li><b>Instala</b> con los dos comandos. Desde la terminal también: <code>claude plugin marketplace add Hainrixz/creative-architect</code> y <code>claude plugin install creative-architect@creative-architect</code>.</li>
+          <li><b>Conecta</b> un proveedor: el conector de Higgsfield en claude.ai, el MCP de Magnific o tu <code>OPENAI_API_KEY</code> en el shell. Opcional.</li>
+          <li><b>Pide</b> en español normal. El agente decide el oficio, la luz y el lente.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- REGLAS -->
+    <section class="seccion reglas">
+      <div class="seccion__cabeza revela">
+        <p class="eyebrow">06 — Lo que nunca hace</p>
+        <h2>Autónomo, <em>no</em> imprudente.</h2>
+      </div>
+      <ul class="reglas__lista">
+        <li class="revela">No entrena caras ni clona voces sin el permiso de quien las presta.</li>
+        <li class="revela">No inventa testimonios ni experiencia que no le pasó a nadie.</li>
+        <li class="revela">De la competencia toma la estructura, nunca el contenido.</li>
+        <li class="revela">No compra créditos, no publica ni borra nada remoto si no se lo pides.</li>
+        <li class="revela">El costo es una nota de una línea, no un candado.</li>
+        <li class="revela">Nunca imprime ni guarda una llave.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p class="pie__grande">Creative <em>Architect</em></p>
+    <p>Hecho por <a href="https://tododeia.com">Enrique Rocha</a> · MIT · Basado en higgsfield-estudio v5.0.0</p>
+  </footer>
+</body>
+</html>
