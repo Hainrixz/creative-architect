@@ -2,6 +2,23 @@
 
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). Versionado [SemVer](https://semver.org/lang/es/).
 
+## [1.0.1] - 2026-10-17
+
+Presentación. El plugin funciona igual.
+
+### Añadido
+- Home animado en `docs/index.html`, solo con HTML y CSS:
+  - Hero en forma de visor de cámara, con haz de luz, enfoque que se fija y lectura técnica.
+  - Secciones que aparecen con el scroll.
+  - Respeta `prefers-reduced-motion`.
+- Banner SVG animado (`assets/banner.svg`) y capturas del home para el README.
+
+### Cambiado
+- README reescrito:
+  - Instalación en dos comandos, dentro de Claude Code o desde la terminal, probada contra el repo.
+  - Sección "Qué es", comparativa con `higgsfield-estudio` y tabla de uso.
+  - Lo de detalle va en secciones plegables.
+
 ## [1.0.0] - 2026-10-17
 
 Primera versión de Creative Architect. Nace de `higgsfield-estudio` 5.0.0: se conserva el oficio y se separa del proveedor.

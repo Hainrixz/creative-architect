@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "creative-architect",
   "displayName": "Creative Architect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Director de arte y productor de imagen y video con IA, independiente del proveedor. Fotos de producto, avatares de marca, UGC, animación y clonación de anuncios con criterio profesional, sobre Higgsfield, Magnific, OpenAI o el proveedor que tengas conectado.",
   "author": {
     "name": "Enrique Rocha",
