@@ -1,0 +1,222 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tododeia.com/schemas/creative-architect/avatar.schema.json",
+  "title": "marca/avatar.json — el personaje persistente de la marca",
+  "description": "Contrato del archivo marca/avatar.json, que vive junto a marca.json en la carpeta de trabajo. Lo escribe la skill avatar y lo leen ugc y producto para que el mismo personaje salga en todas las generaciones. La descripción del personaje se guarda una vez; las identidades y las voces se guardan POR PROVEEDOR, porque un identificador de un proveedor no sirve en otro. Guarda solo identificadores, que son públicos dentro de la cuenta: NUNCA guarda llaves, tokens ni credenciales.",
+  "type": "object",
+  "required": [
+    "version",
+    "nombre"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": "2.0"
+    },
+    "nombre": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Cómo se llama el personaje dentro de la marca. P. ej. 'Sofi, la de los reels'."
+    },
+    "esPersonaReal": {
+      "type": "boolean",
+      "description": "true si el avatar representa a una persona de carne y hueso que dio permiso; false si es un personaje inventado. Si es true, el permiso tiene que existir de verdad."
+    },
+    "descripcion": {
+      "type": "object",
+      "description": "El brief del personaje en palabras. Es lo único que viaja igual a cualquier proveedor: se vuelve a usar en cada prompt para que no se desvíe.",
+      "additionalProperties": false,
+      "properties": {
+        "quien": {
+          "type": "string",
+          "description": "Edad aproximada, rasgos, de dónde parece. Tres o cuatro frases."
+        },
+        "vestuario": {
+          "type": "string",
+          "description": "Cómo viste, en línea con lo visual de marca.json si existe."
+        },
+        "entorno": {
+          "type": "string",
+          "description": "El fondo típico donde aparece: su cocina, un estudio limpio, la calle."
+        },
+        "comoHabla": {
+          "type": "string",
+          "description": "Ritmo y actitud al hablar. P. ej. 'rápida, cercana, se ríe a mitad de frase'."
+        }
+      }
+    },
+    "identidades": {
+      "type": "object",
+      "description": "Una entrada por proveedor, con la clave en minúsculas como se llama en skills/proveedores (p. ej. 'higgsfield', 'openai', 'magnific'). Cada entrada puede tener 'entrenada', 'referencia' o las dos a la vez (p. ej. un Soul y un Elemento del mismo personaje en Higgsfield). Se agregan proveedores nuevos sin tocar los demás. Puede estar vacío si todavía no hay ningún proveedor conectado.",
+      "propertyNames": {
+        "pattern": "^[a-z0-9][a-z0-9-]*$"
+      },
+      "properties": {
+        "higgsfield": {
+          "$ref": "#/$defs/identidadesProveedor"
+        },
+        "openai": {
+          "$ref": "#/$defs/identidadesProveedor"
+        },
+        "magnific": {
+          "$ref": "#/$defs/identidadesProveedor"
+        }
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/identidadesProveedor"
+      }
+    },
+    "voces": {
+      "type": "object",
+      "description": "La voz del personaje, una entrada por proveedor con la misma convención de claves que identidades.",
+      "propertyNames": {
+        "pattern": "^[a-z0-9][a-z0-9-]*$"
+      },
+      "properties": {
+        "higgsfield": {
+          "$ref": "#/$defs/voz"
+        },
+        "openai": {
+          "$ref": "#/$defs/voz"
+        },
+        "magnific": {
+          "$ref": "#/$defs/voz"
+        }
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/voz"
+      }
+    },
+    "audioDeOrigen": {
+      "type": "string",
+      "description": "Ruta relativa al audio con el que se creó la voz propia, si la persona aceptó guardarlo. Sirve para recrear la voz en otro proveedor sin volver a grabar."
+    },
+    "hojaDePersonaje": {
+      "type": "array",
+      "description": "Las imágenes de la hoja de personaje ya generadas, para reusarlas como referencia sin volver a pagarlas. Los archivos locales valen en cualquier proveedor; el jobId solo en el que lo produjo.",
+      "items": {
+        "type": "object",
+        "required": [
+          "archivo"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "archivo": {
+            "type": "string",
+            "description": "Ruta relativa a la carpeta de trabajo, normalmente dentro de marca/avatar/."
+          },
+          "vista": {
+            "type": "string",
+            "description": "Qué muestra: 'ancla', 'frente', 'tres cuartos', 'perfil', 'cuerpo completo', 'expresiones'."
+          },
+          "proveedor": {
+            "type": "string",
+            "description": "Qué proveedor la generó, con la misma clave que en identidades. Vacío si es una foto real."
+          },
+          "jobId": {
+            "type": "string",
+            "description": "Opcional. Id del trabajo en ese proveedor; algunos lo aceptan como referencia en otra generación."
+          }
+        }
+      }
+    },
+    "creadoEn": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "actualizadoEn": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "$defs": {
+    "identidadesProveedor": {
+      "type": "object",
+      "description": "Las identidades del personaje en un proveedor concreto. 'entrenada' y 'referencia' son opcionales y pueden coexistir: se usa una u otra según la escena.",
+      "additionalProperties": false,
+      "properties": {
+        "entrenada": {
+          "$ref": "#/$defs/identidad",
+          "description": "Intención identidad.entrenada: varias fotos, una sola persona por escena, pocos modelos. En Higgsfield, Soul."
+        },
+        "referencia": {
+          "$ref": "#/$defs/identidad",
+          "description": "Intención identidad.referencia: una imagen, varios sujetos, más modelos. En Higgsfield, Elemento."
+        }
+      }
+    },
+    "identidad": {
+      "type": "object",
+      "description": "El identificador que hace que salga siempre la misma cara en un proveedor concreto. Solo identificadores: nunca llaves, tokens ni credenciales.",
+      "required": [
+        "id"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "El identificador que devolvió el proveedor al crear la identidad."
+        },
+        "nombreEnProveedor": {
+          "type": "string",
+          "description": "Cómo llama el proveedor a esta cosa, tal cual. P. ej. 'Soul' o 'Elemento' en Higgsfield."
+        },
+        "variante": {
+          "type": "string",
+          "description": "Variante o sabor de la identidad si el proveedor la distingue, tal cual. P. ej. 'soul_2' o 'soul_cinematic'."
+        },
+        "url": {
+          "type": "string",
+          "description": "Opcional. URL https que devolvió la subida, cuando el proveedor la pide junto al id (en Higgsfield, la referencia guardada). Nunca una URL firmada con token."
+        },
+        "modelosCompatibles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Modelos con los que esta identidad sí funciona, tal como los devolvió el proveedor. Se apunta para no descubrirlo pagando."
+        },
+        "estado": {
+          "enum": [
+            "entrenando",
+            "lista",
+            "fallida"
+          ],
+          "description": "Para identidades entrenadas, que tardan."
+        },
+        "creadoEn": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "voz": {
+      "type": "object",
+      "description": "Una voz del personaje en un proveedor concreto. Solo identificadores: nunca llaves, tokens ni credenciales.",
+      "required": [
+        "id"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "El identificador de la voz en ese proveedor."
+        },
+        "tipo": {
+          "type": "string",
+          "description": "Si el proveedor separa identificador y tipo, el tipo tal cual (en Higgsfield, 'preset' o 'element'). Se pasa siempre junto con el id."
+        },
+        "esVozPropia": {
+          "type": "boolean",
+          "description": "true si se clonó la voz de alguien que dio permiso explícito; false si es de fábrica."
+        },
+        "nota": {
+          "type": "string",
+          "description": "Cómo suena, para que se elija bien la próxima vez."
+        }
+      }
+    }
+  }
+}
