@@ -3,6 +3,7 @@ name: ugc
 description: Videos con una persona hablando de tu producto, sin cámara ni actores. Úsala si pides un video UGC, "un anuncio con una creadora hablando", "que alguien pruebe mi producto en video", un review, un unboxing, un try-on, un tutorial, "un video de mi app desde el link" o "un video de TikTok para vender esto".
 license: MIT
 ---
+<!-- Copyright (c) 2026 Enrique Rocha (@soyenriquerocha) · tododeia.com · id er-328bd7e5 -->
 
 # UGC: el video que parece de una persona, no de una marca
 

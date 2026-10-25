@@ -3,6 +3,7 @@ name: direccion-de-arte
 description: Escribe el prompt de imagen que sale profesional en vez de genérico, por bloques, con luz, lente y exclusiones decididas. Úsala si pides mejorar mi prompt, dirección de arte, me salió genérico, no se ve profesional, se ve feo, quiero que se vea caro, esta imagen parece hecha con IA o cómo le pido que se vea como esta referencia.
 license: MIT
 ---
+<!-- Copyright (c) 2026 Enrique Rocha (@soyenriquerocha) · tododeia.com · id er-328bd7e5 -->
 
 # Dirección de arte: la diferencia entre "una foto de mi producto" y una foto que vende
 

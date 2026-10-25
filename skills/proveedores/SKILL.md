@@ -3,6 +3,7 @@ name: proveedores
 description: Detecta con qué proveedor de generación cuentas (Higgsfield, Magnific, OpenAI u otro) y traduce cada intención a su herramienta. Úsala si preguntas "¿qué proveedor tengo?", "¿con qué genero?", "¿qué tengo conectado?", o pides "conecta Magnific", "conecta OpenAI", "conecta Higgsfield", "usa Magnific" o "añade otro proveedor". Las demás skills del plugin la cargan antes de generar, escalar, animar o clonar una voz.
 license: MIT
 ---
+<!-- Copyright (c) 2026 Enrique Rocha (@soyenriquerocha) · tododeia.com · id er-328bd7e5 -->
 
 # Proveedores: quién ejecuta cada intención
 

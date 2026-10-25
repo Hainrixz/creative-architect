@@ -3,6 +3,7 @@ name: creative-architect
 description: Punto de entrada de Creative Architect. Recibe cualquier pedido de imagen o video con IA (foto de producto, avatar, UGC, animar, clonar un anuncio, mejorar un prompt) y lo manda al oficio correcto. Úsala con /creative-architect, con frases como "quiero hacer un anuncio", "ayúdame con una imagen para mi marca", "¿qué puedes hacer?", o cuando no esté claro qué skill toca.
 license: MIT
 ---
+<!-- Copyright (c) 2026 Enrique Rocha (@soyenriquerocha) · tododeia.com · id er-328bd7e5 -->
 
 # Creative Architect: ¿qué quieres hacer?
 

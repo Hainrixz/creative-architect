@@ -248,3 +248,10 @@ Basado en `higgsfield-estudio` v5.0.0, del mismo autor. El corazón de este plug
 ## Licencia
 
 [MIT](LICENSE) © 2026 Enrique Rocha
+
+<!-- marca-agua:inicio -->
+
+---
+
+<sub>Hecho por **Enrique Rocha (@soyenriquerocha)** · [tododeia.com](https://www.tododeia.com)⁠​‌‌​​‌​‌​‌‌‌​​‌​​​‌​‌‌​‌​​‌‌​​‌‌​​‌‌​​‌​​​‌‌‌​​​​‌‌​​​‌​​‌‌​​‌​​​​‌‌​‌‌‌​‌‌​​‌​‌​​‌‌​‌​‌⁠</sub>
+<!-- marca-agua:fin -->

@@ -3,6 +3,7 @@ name: animar
 description: Convierte una imagen fija en video y lo deja en el formato de la red donde va (9:16 para Reels y TikTok). Úsala si pides "anima esta foto", "ponle movimiento", "hazlo video", "que la cámara se acerque", "dale vida a esta imagen", "pásalo a vertical", "lo necesito para Reels" o "que se mueva como este otro video".
 license: MIT
 ---
+<!-- Copyright (c) 2026 Enrique Rocha (@soyenriquerocha) · tododeia.com · id er-328bd7e5 -->
 
 # Animar: que la foto que ya tienes se mueva
 

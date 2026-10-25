@@ -3,6 +3,7 @@ name: avatar
 description: El mismo personaje en todos tus videos, con la misma cara y la misma voz. Úsala si pides un avatar o presentador de marca, "mi gemelo digital", "un personaje que salga siempre", "que sea la misma persona en todos los videos", "clona mi voz" o "una hoja de personaje".
 license: MIT
 ---
+<!-- Copyright (c) 2026 Enrique Rocha (@soyenriquerocha) · tododeia.com · id er-328bd7e5 -->
 
 # Avatar: la misma cara en todos tus videos
 

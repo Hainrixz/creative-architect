@@ -3,6 +3,7 @@ name: clonar-anuncio
 description: Busca lo que corre tu competencia en la Biblioteca de Anuncios de Meta y copia su estructura, no su contenido. Úsala si pides "espía a mi competencia", "qué anuncios está corriendo", "clona este anuncio", "quiero uno como el de ellos", "por qué funciona este video", "sácame variantes de mi anuncio" o "¿esto se va a hacer viral?".
 license: MIT
 ---
+<!-- Copyright (c) 2026 Enrique Rocha (@soyenriquerocha) · tododeia.com · id er-328bd7e5 -->
 
 # Clonar anuncio: quédate con el esqueleto, no con la carne
 

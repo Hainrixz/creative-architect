@@ -3,6 +3,7 @@ name: producto
 description: Convierte la foto real de tu producto en foto de catálogo o creativo de anuncio, sin sesión de fotos y sin inventarte el producto. Úsala si pides fotos de mi producto, un packshot, una foto de catálogo, fondo blanco, quítale el fondo, ponlo sobre un fondo bonito, la foto para el anuncio o fotos para la tienda.
 license: MIT
 ---
+<!-- Copyright (c) 2026 Enrique Rocha (@soyenriquerocha) · tododeia.com · id er-328bd7e5 -->
 
 # Producto: de la foto del celular a la foto de catálogo
 
